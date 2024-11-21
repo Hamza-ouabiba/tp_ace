@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView for displaying comptes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1" />
+
+    <!-- Add Account Button -->
+    <Button
+        android:id="@+id/addAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E40E0E"
+        android:backgroundTint="#A31B1B"
+        android:shadowColor="#FF0E0E"
+        android:text="ajouter compte"
+        android:textAllCaps="true"
+        android:textColor="#CCC3C3"
+        android:textColorHighlight="#E80909"
+        android:textColorHint="#EC0000"
+        android:textColorLink="#EF0202" />
+
+    <!-- RadioGroup for selecting JSON or XML -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioJson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="JSON" />
+
+        <RadioButton
+            android:id="@+id/radioXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML" />
+    </RadioGroup>
+
+</LinearLayout>
